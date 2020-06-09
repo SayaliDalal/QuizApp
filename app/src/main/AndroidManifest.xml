@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.Mpscquiz">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/app_logo"
+        android:roundIcon="@drawable/app_logo"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name="com.example.Mpscquiz.MainSecond"
+            android:label="MPSC Practice Test App"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.Mpscquiz.MainActivity"
+            android:label="MPSC Practice Test App"
+            android:parentActivityName="com.example.Mpscquiz.MainSecond"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.Mpscquiz.MainSecond" />
+        </activity>
+        <activity
+            android:name="com.example.Mpscquiz.Navigation_Activity"
+            android:label="MPSC Practice Test App"
+            android:parentActivityName="com.example.Mpscquiz.MainSecond"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.Mpscquiz.MainSecond" />
+        </activity>
+        <activity
+            android:name="com.example.Mpscquiz.AboutUs"
+            android:label="@string/title_activity_about_us"
+            android:parentActivityName="com.example.Mpscquiz.Navigation_Activity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.Mpscquiz.Navigation_Activity" />
+        </activity>
+        <activity
+            android:name="com.example.Mpscquiz.activity_profile1"
+            android:label="Profile"
+            android:parentActivityName="com.example.Mpscquiz.Navigation_Activity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.Mpscquiz.Navigation_Activity" />
+        </activity>
+        <activity
+            android:name="com.example.Mpscquiz.Questions"
+            android:label="Questions"
+            android:parentActivityName="com.example.Mpscquiz.Navigation_Activity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.Mpscquiz.Navigation_Activity" />
+        </activity>
+        <activity
+            android:name="com.example.Mpscquiz.activity_result"
+            android:label="Result" />
+        <activity
+            android:name="com.example.Mpscquiz.ScoreCard"
+            android:label="Highest Score"
+            android:parentActivityName="com.example.Mpscquiz.Navigation_Activity"
+            android:theme="@style/AppTheme">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.Mpscquiz.Navigation_Activity" />
+        </activity>
+        <activity
+            android:name="com.example.Mpscquiz.Setting_activity"
+            android:label="@string/title_activity_setting_activity"
+            android:parentActivityName="com.example.Mpscquiz.Navigation_Activity"
+            android:theme="@style/AppTheme">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.Mpscquiz.Navigation_Activity" />
+        </activity>
+        <activity android:name=".PDFViewActivity"></activity>
+
+    </application>
+
+</manifest>

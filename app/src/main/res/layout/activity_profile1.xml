@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context="com.example.Mpscquiz.activity_profile1">
+
+
+    <RelativeLayout
+        android:id="@+id/relative2"
+        android:layout_width="match_parent"
+        android:layout_height="685dp"
+        android:orientation="vertical"
+        android:paddingLeft="16dp"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        android:paddingRight="16dp"
+        android:paddingBottom="@dimen/activity_vertical_margin">
+
+        <ImageView
+            android:id="@+id/nav_header_image2"
+            android:layout_width="148dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="129dp"
+            android:layout_marginTop="31dp"
+            android:layout_marginEnd="118dp"
+            android:layout_marginBottom="531dp"
+            android:scaleType="centerCrop" />
+
+        <TextView
+            android:id="@+id/nav_header_email2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/nav_header_name2"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="59dp"
+            android:layout_marginTop="125dp"
+            android:layout_marginEnd="39dp"
+            android:layout_marginBottom="5dp"
+            android:paddingTop="5dp"
+            android:textAlignment="center"
+            android:textColor="#1034A6"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/nav_header_name2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="56dp"
+            android:layout_marginEnd="38dp"
+            android:layout_marginBottom="450dp"
+            android:paddingTop="@dimen/nav_header_vertical_spacing"
+            android:textAlignment="center"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+            android:textColor="#1034A6"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/logout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="92dp"
+            android:layout_marginEnd="86dp"
+            android:layout_marginBottom="380dp"
+            android:background="@drawable/custom_button"
+            android:foreground="?attr/selectableItemBackground"
+            android:text="LOGOUT"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp" />
+
+    </RelativeLayout>
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

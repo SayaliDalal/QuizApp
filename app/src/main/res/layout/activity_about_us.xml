@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context="com.example.Mpscquiz.AboutUs">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:orientation="vertical"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:background="#fff"
+            android:layout_height="wrap_content" >
+
+            <ImageView
+                android:id="@+id/i"
+                android:layout_width="match_parent"
+                android:layout_height="190dp"
+                android:layout_gravity="center_horizontal"
+                android:background="#006D1E1E"
+                android:padding="100dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/app_logo" />
+
+            <TextView
+                android:id="@+id/q"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/i"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="5dp"
+                android:text="Mpsc Practice Test"
+                android:textColor="#1036A5"
+                android:textSize="24sp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="24sp"
+                android:layout_below="@id/q"
+                android:text="Version 1.0.0"
+                android:textColor="#1036A5"
+                android:layout_margin="10dp"
+                android:layout_centerHorizontal="true"/>
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:gravity="center"
+            android:text="@string/note"
+            android:textAlignment="center"
+            android:textColor="#1036A5"
+            android:textSize="16sp" />
+
+    </LinearLayout>
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

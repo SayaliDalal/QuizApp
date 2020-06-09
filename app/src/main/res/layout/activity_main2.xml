@@ -1,0 +1,267 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context=".Questions">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingBottom="@dimen/activity_vertical_margin">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:orientation="vertical"
+            android:id="@+id/linearLayout">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="top|left">
+
+                    <TextView
+                        android:id="@+id/qstnNo"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:paddingLeft="8dp"
+                        android:paddingRight="8dp"
+                        android:singleLine="true"
+                        android:text="01/30"
+                        android:textColor="#ffff"
+                        android:textSize="20dp"
+                        android:textStyle="bold"
+                        android:background="@drawable/rect_background_pink"
+                        android:visibility="invisible" />
+
+                </RelativeLayout>
+
+
+                <TextView
+                    android:id="@+id/textViewTime"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:text="30:00"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="25dp"
+                    android:textStyle="bold"
+                    android:visibility="invisible" />
+
+            </RelativeLayout>
+
+            <ProgressBar
+                android:id="@+id/progressBar"
+                style="@style/CustomProgressBar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="5dp"
+                android:max="30"
+                android:visibility="invisible"/>
+
+            <TextView
+                android:id="@+id/question"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Large Text"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textColor="@color/colorPrimaryDark"
+                android:visibility="invisible"/>
+
+            <RadioGroup
+                android:id="@+id/radio_group"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:layout_weight="0.03">
+
+                <RadioButton
+                    android:id="@+id/op1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:checked="false"
+                    android:text="RadioButton"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:visibility="invisible" />
+
+                <RadioButton
+                    android:id="@+id/op2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="RadioButton"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:visibility="invisible" />
+
+                <RadioButton
+                    android:id="@+id/op3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="RadioButton"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:visibility="invisible" />
+
+                <RadioButton
+                    android:id="@+id/op4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="RadioButton"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:visibility="invisible" />
+
+            </RadioGroup>
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/next_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/quit_button"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginBottom="50dp"
+            android:background="@color/colorButtonNormal"
+            android:fontFamily="sans-serif"
+            android:text="NEXT"
+            android:textColor="#fff"
+            android:visibility="invisible" />
+
+        <Button
+            android:id="@+id/quit_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:background="@color/colorButtonNormal"
+            android:fontFamily="sans-serif"
+            android:text="End Exam"
+            android:textColor="#fff"
+            android:visibility="invisible" />
+
+    </RelativeLayout>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardview1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="60dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="70dp"
+        android:visibility="visible"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="10dp"
+        app:cardPreventCornerOverlap="false"
+        app:cardUseCompatPadding="true">
+
+        <RelativeLayout
+            android:id="@+id/relativeLayout1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:id="@+id/linearlayout1"
+                android:layout_width="match_parent"
+                android:layout_height="141dp"
+                android:background="@color/colorButtonNormal"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="64dp"
+                    android:layout_height="64dp"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/circle_stroke_white"
+                    android:padding="12dp"
+                    android:src="@drawable/ic_icon"
+                    android:tint="#fff" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="20dp"
+                    android:fontFamily="sans-serif-medium"
+                    android:text="INFORMATION"
+                    android:textColor="#fff"
+                    android:textSize="22sp" />
+
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/imageView1"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_below="@+id/linearlayout1"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="-10dp"
+                android:rotation="45"
+                android:src="@drawable/square" />
+
+            <RelativeLayout
+                android:id="@+id/relativeLayout2"
+                android:layout_width="338dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/imageView1"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginRight="30dp">
+
+                <TextView
+                    android:id="@+id/text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginTop="13dp"
+                    android:layout_marginEnd="0dp"
+                    android:background="@color/transparent"
+                    android:paddingLeft="20dp"
+                    android:paddingBottom="20dp"
+                    android:text="This round consists of 30 Questions. \nDuration: 30 Minutes \nThis section will decide your Scoreboard \n\nPLAY WELL"
+                    android:textAlignment="center"
+                    android:textSize="15sp" />
+
+                <Button
+                    android:id="@+id/play_button"
+                    android:layout_width="236dp"
+                    android:layout_height="50dp"
+                    android:layout_below="@+id/text"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginRight="30dp"
+                    android:background="@drawable/custom_option"
+                    android:fontFamily="sans-serif"
+                    android:foreground="?attr/selectableItemBackground"
+                    android:onClick="onClick"
+                    android:text="Let's Play"
+                    android:textColor="#fff"
+                    android:textStyle="bold"
+                    android:visibility="visible"
+                    tools:ignore="OnClick" />
+
+            </RelativeLayout>
+
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

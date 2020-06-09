@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">MPSC Practice Test</string>
+    <string name="toast_message">"1. Enter your name for the quiz. 2. Enter your valid mail address. eg:  abc@xyz.com 3.  Now set your password for security purpose. Enjoy the app! ☺</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="title_activity_navigation_activity">MPSC Practice Test</string>
+    <string name="title_activity_navigation_">Navigation_Activity</string>
+    <string name="title_activity_about_us">About Us</string>
+    <string name="note">MPSC Practice Test is a smart app which is designed with simple and optimized user interface. MPSC Practice Test has all the categories of MPSC subjects question which are asked in the MPSC exam.This app is developed by Sayali Dalal.
+    </string>
+    <string name="title_activity_settings">Setting</string>
+    <string name="title_activity_questions">Questions</string>
+    <string name="title_activity_score_card">ScoreCard</string>
+    <string name="title_activity_setting_activity">Settings</string>
+
+</resources>

@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.example.Mpscquiz.Navigation_Activity"
+    tools:showIn="@layout/app_bar_navigation_">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/b1"
+                android:layout_width="30dp"
+                android:layout_height="match_parent"
+                android:layout_margin="2dp"
+                android:layout_weight="1"
+                android:background="#cc8d66"
+                android:foreground="?attr/selectableItemBackground"
+                android:paddingTop="25dp"
+                android:text="Logical Reasoning and Aptitude"
+                android:textAllCaps="false"
+                android:textColor="#FFFFFF"
+                android:textSize="20sp" />
+
+
+            <Button
+                android:id="@+id/b2"
+                android:layout_width="0dp"
+                android:layout_height="200dp"
+                android:layout_margin="2dp"
+                android:layout_weight="1"
+                android:background="#524d47"
+                android:foreground="?attr/selectableItemBackground"
+                android:paddingTop="25dp"
+                android:text="English"
+                android:textAllCaps="false"
+                android:textColor="#ffffff"
+                android:textSize="20sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/b3"
+                android:layout_width="0dp"
+                android:layout_height="200dp"
+                android:layout_margin="2dp"
+                android:layout_weight="1"
+                android:background="#e7595d"
+                android:foreground="?attr/selectableItemBackground"
+                android:text="History"
+                android:textAllCaps="false"
+                android:textColor="#fff"
+                android:textSize="20sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/b4"
+                android:layout_width="0dp"
+                android:layout_height="200dp"
+                android:layout_margin="2dp"
+                android:layout_weight="1"
+                android:background="#a084d1"
+                android:foreground="?attr/selectableItemBackground"
+                android:paddingTop="25dp"
+                android:text="Geography"
+                android:textAllCaps="false"
+                android:textColor="#fff"
+                android:textSize="20sp" />
+
+            <Button
+                android:id="@+id/b5"
+                android:layout_width="0dp"
+                android:layout_height="200dp"
+                android:layout_margin="2dp"
+                android:layout_weight="1"
+                android:background="#80e7a9"
+                android:paddingTop="25dp"
+                android:text="Agriculture"
+                android:textAllCaps="false"
+                android:textColor="#fff"
+                android:textSize="20sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/b6"
+                android:layout_width="0dp"
+                android:layout_height="220dp"
+                android:layout_margin="2dp"
+                android:layout_weight="1"
+                android:background="#B7FF3D00"
+                android:foreground="?attr/selectableItemBackground"
+                android:paddingTop="40dp"
+                android:text="Politics"
+                android:textAllCaps="false"
+                android:textColor="#fff"
+                android:textSize="20sp" />
+
+
+            <Button
+                android:id="@+id/b7"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_margin="2dp"
+                android:layout_weight="1"
+                android:background="#C845E6"
+                android:foreground="?attr/selectableItemBackground"
+                android:paddingTop="60dp"
+                android:text="Human Resource Development and Human Rights"
+                android:textAllCaps="false"
+                android:textColor="#fff"
+                android:textSize="20sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/b8"
+                android:layout_width="0dp"
+                android:layout_height="200dp"
+                android:layout_margin="2dp"
+                android:layout_weight="1"
+                android:background="#13AAE6"
+                android:foreground="?attr/selectableItemBackground"
+                android:paddingLeft="35dp"
+                android:text="Science and Technology"
+                android:textAllCaps="false"
+                android:textColor="#fff"
+                android:textSize="20sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/b9"
+                android:layout_width="0dp"
+                android:layout_height="200dp"
+                android:layout_margin="2dp"
+                android:layout_weight="1"
+                android:background="#f71735"
+                android:foreground="?attr/selectableItemBackground"
+                android:paddingTop="25dp"
+                android:text="Economy"
+                android:textAllCaps="false"
+                android:textColor="#fff"
+                android:textSize="20sp"/>
+
+
+            <Button
+                android:id="@+id/b10"
+                android:layout_width="0dp"
+                android:layout_height="200dp"
+                android:layout_margin="2dp"
+                android:layout_weight="1"
+                android:background="#88a6db"
+                android:foreground="?attr/selectableItemBackground"
+                android:paddingTop="25dp"
+                android:text="Current Affair"
+                android:textAllCaps="false"
+                android:textColor="#fff"
+                android:textSize="20sp"/>
+        </LinearLayout>
+
+
+    </LinearLayout>
+</ScrollView>
