@@ -13,6 +13,6 @@ An android quiz application in which user gives the exam for different subjects 
 ### I also highly recommend you to suggest some improvements in the project.
 
 ## You can download .apk file from below 👇
-
+[Install App](https://github.com/SayaliDalal/QuizApp/blob/master/media/Quiz-App.apk?raw=true)
 
 
